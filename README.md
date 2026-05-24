@@ -26,15 +26,21 @@ flux2-batch-edit/
 │  └─ .gitkeep
 └─ output/
    └─ .gitkeep
+<<<<<<< HEAD
 ```
 ## Requirements
 
 ```text
+=======
+
+Requirements
+>>>>>>> 9da9a67 (Initial commit: add FLUX.2 Klein batch editor)
 Windows
 Python 3.12 recommended
 NVIDIA GPU recommended
 Hugging Face account with access to the selected FLUX.2 model
 Setup
+<<<<<<< HEAD
 ```
 
 ### Create and activate a virtual environment:
@@ -75,6 +81,47 @@ output/
 ```
 ### Example Command
 ```
+=======
+
+Create and activate a virtual environment:
+
+py -3.12 -m venv .venv
+.\.venv\Scripts\activate
+
+Install PyTorch with CUDA support:
+
+python -m pip install --upgrade pip
+python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+
+Install dependencies:
+
+python -m pip install -r requirements.txt
+
+Log into Hugging Face:
+
+hf auth login
+
+Usage
+
+Put source images into:
+
+input/
+
+Edit the prompt file:
+
+prompts/edit_prompt.txt
+
+Run: 
+
+run_edit.bat
+
+Edited images will be saved to:
+
+output/
+
+Example Command
+
+>>>>>>> 9da9a67 (Initial commit: add FLUX.2 Klein batch editor)
 python .\batch_edit_flux2.py ^
   --input-dir .\input ^
   --output-dir .\output ^
@@ -86,8 +133,13 @@ python .\batch_edit_flux2.py ^
   --max-width 1600 ^
   --max-height 1600 ^
   --overwrite
+<<<<<<< HEAD
 ```
 ### Notes
+=======
+
+Notes
+>>>>>>> 9da9a67 (Initial commit: add FLUX.2 Klein batch editor)
 Large images can cause CUDA out-of-memory errors. Use --max-width and --max-height to control working resolution.
 The script pads images to a multiple of 16 before inference and crops back afterward.
 PyTorch is installed separately because CUDA wheel selection depends on your system.

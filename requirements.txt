@@ -1,0 +1,8 @@
+diffusers @ git+https://github.com/huggingface/diffusers.git
+transformers
+accelerate
+safetensors
+sentencepiece
+pillow
+numpy
+huggingface_hub

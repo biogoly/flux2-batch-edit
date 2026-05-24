@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local caches
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# Hugging Face / model caches
+models/
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+
+# IDE/editor
+.vscode/
+.idea/
+
+# OS junk
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Local input/output images
+input/*
+!input/.gitkeep
+
+output/*
+!output/.gitkeep
+
+# Local config/secrets
+.env
+.env.*
+*.token
