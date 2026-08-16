@@ -1,3 +1,6 @@
+<img width="1280" height="602" alt="7b8a7873-e992-4646-9f6e-c3065800feaa" src="https://github.com/user-attachments/assets/9364c920-b7b4-4bbd-9bce-dd7c2e75538f" />
+
+
 # FLUX.2 Klein Batch Image Editor
 
 A Windows-friendly batch image editing tool for quickly processing a folder of images with FLUX.2 Klein using a shared edit prompt.
